@@ -14,7 +14,6 @@
 }
 body{
     min-height: 100vh;
-    padding: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -27,6 +26,7 @@ header{
     width: 100%;
     min-width: 340px;
     max-width: 1350px;
+    padding: 1.2rem;
     border: 1px solid black;
 
     display: flex;
@@ -46,9 +46,9 @@ header ul{
 
 /* MAIN STYLES */
 main{
-    width: 100%;
     min-width: 340px;
     max-width: 1350px;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     gap: 12rem;
@@ -195,4 +195,97 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+footer{
+    width: 100%;
+}
+footer .first{
+    width: 100%;
+    min-width: 340px;
+    padding: 1rem;
+    background-color: var(--Desaturated_Blue);
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+.first .text{
+    width: 100%;
+    min-width: 340px;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.first form{
+    width: 100%;
+    min-width: 340px;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.first form input{
+    width: 100%;
+    max-width: 287px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+.first form button{
+    width: 100%;
+    max-width: 287px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Bright_Blue);
+    color: white;
+    font-weight: bold;
+}
+footer .second{
+    background-color: var(--Very_Dark_Blue);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(311px, 1fr));
+    padding: 2rem 2rem;
+    gap: 2rem;
+}
+.second ul{
+    padding-left: 2rem;
+    color: white;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: max-content;
+}
+.second ul li:first-child{
+    width: 100%;
+    list-style-image: url('../images/icon-phone.svg');
+}
+.second ul li:last-child{
+    list-style-image: url('../images/icon-email.svg');
+}
+.second div:nth-child(2){
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
+    grid-auto-rows:50px;
+    align-items: center;
+    justify-items: left;
+}
+.second div:last-child{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+.second div:last-child img{
+    width: 20px;
 }
