@@ -20,14 +20,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+button{
+    cursor: pointer;
+}
 /* HEADER STYLES */
 header{
     width: 100%;
     min-width: 340px;
     max-width: 1350px;
     padding: 1.2rem;
-    border: 1px solid black;
 
     display: flex;
     justify-content: space-between;
@@ -288,4 +289,41 @@ footer .second{
 }
 .second div:last-child img{
     width: 20px;
+}
+
+@media (min-width:1440px){
+    main section.first-section{
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .first-section .text{
+        text-align: left;
+    }
+    main section.second-section{
+        flex-direction: row-reverse;
+    }
+    main .second-section .text{
+        text-align: left;
+    }
+    main .second-section .text a{
+        margin-left: 0;
+    }
+    main .second-section .testimonial{
+        margin-left: 0;
+    }
+    footer .first{
+        padding: 4rem 3rem;
+        text-align: left;
+    }
+    footer .first h2{
+        font-size: 2rem;
+    }
+    footer .second{
+        padding:4rem 3rem;
+    }
+    .second div:nth-child(2){
+        width: 50%;
+        justify-self: center;
+        grid-column: 2/4;
+    }
 }
