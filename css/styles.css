@@ -43,3 +43,11 @@ header ul{
     gap: 1.2rem;
     color: var(--Very_Dark_Blue);
 }
+
+/* MAIN STYLES */
+main{
+    width: 100%;
+    min-width: 340px;
+    max-width: 1350px;
+    display: flex;
+}
